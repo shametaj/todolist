@@ -1,0 +1,59 @@
+body,input,button{
+  	font-family: 'Montserrat', sans-serif;
+
+}
+.container{
+	border: none;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+.done {
+  text-decoration: line-through;
+}
+button{
+	margin: 5px;
+  	color: #757575;
+    background-color: #f5f5f5;
+    border: none;
+    height: 34px;
+    width: 90px;
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+#userinput {
+	border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    height: 34px;
+    border-radius: 2px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000;
+}
