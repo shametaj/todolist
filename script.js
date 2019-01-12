@@ -1,24 +1,24 @@
-let button = document.getElementById("enter");
-let input = document.getElementById("userinput");
-let ul = document.querySelector("ul");
-let li = document.getElementsByTagName("li");
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+var li = document.getElementsByTagName("li");
 
 function inputLength() {
 	return input.value.length;
 }
 
 function createListElement() {
-	let li = document.createElement("li");
+	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
 
-	let button =document.createElement("button");
+	var button =document.createElement("button");
 	button.appendChild(document.createTextNode("Done!"));
 	li.appendChild(button);
 	button.onclick=underlineParent;
 // CREATE AN ELEMENT
-	let button =document.createElement("button"); 
+	var button =document.createElement("button"); 
 // APPEND TEXT TO BUTTON
 	button.appendChild(document.createTextNode("Delete!"));
 // APPEND BUTTON TO LIST
