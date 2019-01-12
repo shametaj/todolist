@@ -1,24 +1,24 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
-var li = document.getElementsByTagName("li");
+let button = document.getElementById("enter");
+let input = document.getElementById("userinput");
+let ul = document.querySelector("ul");
+let li = document.getElementsByTagName("li");
 
 function inputLength() {
 	return input.value.length;
 }
 
 function createListElement() {
-	var li = document.createElement("li");
+	let li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
 
-	var button =document.createElement("button");
+	let button =document.createElement("button");
 	button.appendChild(document.createTextNode("Done!"));
 	li.appendChild(button);
 	button.onclick=underlineParent;
 // CREATE AN ELEMENT
-	var button =document.createElement("button"); 
+	let button =document.createElement("button"); 
 // APPEND TEXT TO BUTTON
 	button.appendChild(document.createTextNode("Delete!"));
 // APPEND BUTTON TO LIST
@@ -29,10 +29,6 @@ function createListElement() {
 	
 }
 
-// ul.onclick = function(event){
-// 	var target = event.target;
-// 	target.classList.toggle("done");
-// }
 
 function underlineParent(event){
 	event.target.parentNode.classList.toggle("done");
